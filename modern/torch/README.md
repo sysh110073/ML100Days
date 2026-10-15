@@ -1,6 +1,6 @@
 # PyTorch 練習路線
 
-[← 工具書首頁](../../README.md) · [PyTorch 情境工具書](../../guide/pytorch.md) · [原作業索引](../../guide/legacy-index.md)
+[← 工具書首頁](../../README.md) · [PyTorch 情境工具書](../../guide/pytorch.md) · [TensorFlow 練習](../tensorflow/README.md) · [雙框架對照](../../guide/framework-compare.md) · [原作業索引](../../guide/legacy-index.md)
 
 原 Day 63–100 中的 Keras／TensorFlow 程式保留為歷史筆記，每本舊 notebook 開頭都有新版入口。以下七本是現代教學；預設使用 CPU 可執行的合成資料，避免依賴未附在 repo 的 Kaggle 檔案。
 

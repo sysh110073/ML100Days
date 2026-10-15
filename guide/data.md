@@ -47,7 +47,7 @@ numeric_columns = df.select_dtypes(include="number").columns
 df[numeric_columns] = df[numeric_columns].fillna(df[numeric_columns].median())
 ```
 
-上例只適用一般探索。若資料要進入模型，**不要先對全表取中位數**；使用 [模型篇](ml.md#可直接套用的混合欄位分類流程) 的 `SimpleImputer` + `Pipeline`。`KNNImputer` 可能較慢、對尺度敏感，先與中位數基準比較。缺值本身可能有訊息，可比較 `SimpleImputer(add_indicator=True)`。
+上例只適用一般探索。若資料要進入模型，**不要先對全表取中位數**；使用 [模型篇](ml.md#4-可直接套用的混合欄位分類流程) 的 `SimpleImputer` + `Pipeline`。`KNNImputer` 可能較慢、對尺度敏感，先與中位數基準比較。缺值本身可能有訊息，可比較 `SimpleImputer(add_indicator=True)`。
 
 ### 2. 重複、合併與粒度
 
