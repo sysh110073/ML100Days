@@ -1,0 +1,2 @@
+# 建議獨立虛擬環境；依 TensorFlow 官方安裝頁選擇 CPU/GPU 套件。
+tensorflow>=2.18,<3

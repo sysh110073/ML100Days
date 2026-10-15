@@ -1,8 +1,8 @@
 # PyTorch 工具書：何時用、怎麼訓練、怎麼排錯
 
-[← 工具書首頁](../README.md) · [PyTorch 流程圖](diagrams/torch-flow.html) · [7 本練習 notebook](../modern/torch/README.md) · [完整可執行範例](../examples/torch_training.py) · [舊 Keras 語法對照](migration.md#keras--pytorch-對照)
+[← 工具書首頁](../README.md) · [PyTorch 流程圖](diagrams/torch-flow.html) · [7 本練習 notebook](../modern/torch/README.md) · [完整可執行範例](../examples/torch_training.py) · [TensorFlow ↔ PyTorch 對照](framework-compare.md)
 
-這章取代原 Day 63–100 中的 Keras／TensorFlow 教學。原作業仍在 `homework/` 作為歷史紀錄；請從本章與 [範例](../examples/torch_training.py) 學現代用法。**PyTorch 是這本工具書的選擇，並不表示 Keras 已停止維護。**
+這章是原 Day 63–100 的現代 **PyTorch** 路線。原作業仍在 `homework/` 作為歷史紀錄；若想沿用 TensorFlow，請從 [TensorFlow 教學](tensorflow.md) 開始，再用 [同資料對照](framework-compare.md) 比較。**Keras 仍在維護，也仍是 TensorFlow 的高階教學入口。**
 
 ## 1. 先判斷是否需要深度學習
 

@@ -1,8 +1,8 @@
 # 舊作業 → 現代 API 與方法遷移
 
-[← 工具書首頁](../README.md) · [舊作業索引](legacy-index.md)
+[← 工具書首頁](../README.md) · [舊作業索引](legacy-index.md) · [TensorFlow 新教學](tensorflow.md) · [TensorFlow ↔ PyTorch 實作對照](framework-compare.md)
 
-更新檢視：2026-10-14。原 `homework/` notebook 保留當年的提問與結果，用來對照學習歷程；請使用 `guide/` 和 `examples/` 的語法執行新練習。原作業的 Kaggle CSV、外部圖片、模型檔與套件環境未存入 repo，故不能把「原檔全部可重跑」當成驗收條件。
+更新檢視：2026-10-15。原 `homework/` notebook 保留當年的提問與結果，用來對照學習歷程；請使用 `guide/` 和 `examples/` 的語法執行新練習。另附的 `ML&DL_筆記.md` 已整理於 [來源筆記對照與勘誤](note-map.md)。原作業的 Kaggle CSV、外部圖片、模型檔與套件環境未存入 repo，故不能把「原檔全部可重跑」當成驗收條件。
 
 ## 直接會壞或明顯過時的寫法
 
@@ -26,7 +26,7 @@
 - **Day 34「把測試集切成平衡類別」**：模型評估的測試分布應盡量代表部署時的分布。若只為比較類別別表現，可另外做平衡子集分析，但不能只報該分數。
 - **Day 54「無監督學習不能評估」**：沒有標籤仍可看輪廓係數、群穩定性、密度、異常覆核與下游用途；內部指標不能單獨證明群有業務價值。
 - **Day 63「CNN 只適合影像、RNN 只適合時間」**：卷積也可用於序列，注意力模型也可處理影像與時間序列。依資料結構、可用預訓練模型、成本與驗證結果選架構。
-- **Day 66–100 Keras／TensorFlow 程式**：現代教學改用 [PyTorch](pytorch.md) 的 `Dataset`、`DataLoader`、`nn.Module`、明確訓練迴圈。Day 90–91 的顏色直方圖／HOG + SVM 是傳統 CV 特徵，不必硬改成神經網路；若載入 CIFAR 資料，改用 `torchvision.datasets`。
+- **Day 66–100 Keras／TensorFlow 程式**：可沿用 [TensorFlow 2／Keras 3](tensorflow.md) 的 `tf.data`、`compile`／`fit` 與 `GradientTape`，也可參照 [PyTorch](pytorch.md) 的 `Dataset`、`DataLoader`、`nn.Module`、明確訓練迴圈。逐步差異見 [對照章](framework-compare.md)。Day 90–91 的顏色直方圖／HOG + SVM 是傳統 CV 特徵，不必硬改成神經網路。
 
 ## Keras → PyTorch 對照
 
