@@ -2,7 +2,7 @@
 
 [← 首頁](../README.md) · [TensorFlow ↔ PyTorch 對照](framework-compare.md) · [概念速查](dl-concepts.md) · [3 本練習 notebook](../modern/tensorflow/README.md) · [深度學習流程圖](diagrams/dl-framework-flow.html) · [來源筆記對照與勘誤](note-map.md) · [可執行分類範例](../examples/tf_classification.py)
 
-本章整理另附的 `ML&DL_筆記.md` 與 repo 內 Day 63–100 的主題，採用現行 **TensorFlow 2 + `tf.keras`（Keras 3）** API。Keras 仍是 TensorFlow 的高階模型介面，適合標準訓練與回呼；需要逐步控制梯度時用 `tf.GradientTape`。本書另保留 [PyTorch 路線](pytorch.md)，兩者可依專案環境選擇。舊筆記的 Python 3.8、TensorFlow 2.4／2.5、CUDA 手動複製設定只用於重現當年環境。
+本章整理另附的 `ML&DL_筆記.md` 與 repo 內 Day 63–100 的主題，採用現行 **TensorFlow 2 + `tf.keras`（Keras 3）** API。Keras 3 本身也支援其他後端；這裡的 `tf.keras` 範例使用 TensorFlow 後端，適合標準訓練與回呼；需要逐步控制梯度時用 `tf.GradientTape`。本書另保留 [PyTorch 路線](pytorch.md)，兩者可依專案環境選擇。舊筆記的 Python 3.8、TensorFlow 2.4／2.5、CUDA 手動複製設定只用於重現當年環境。[Keras 3 說明](https://keras.io/keras_3/)
 
 ## 1. 何時使用哪一層 API
 

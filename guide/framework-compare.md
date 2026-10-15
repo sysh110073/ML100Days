@@ -2,7 +2,7 @@
 
 [← 首頁](../README.md) · [TensorFlow 詳解](tensorflow.md) · [PyTorch 詳解](pytorch.md) · [雙框架流程圖](diagrams/dl-framework-flow.html) · [來源筆記對照](note-map.md)
 
-**讀法**：先決定資料切分、標籤、loss 和指標，再看實作語法。兩個框架能表達相同的模型概念，但沒有「函式名稱一換就完全等價」的保證。先跑同一份離線資料：[TensorFlow 範例](../examples/tf_classification.py)／[PyTorch 範例](../examples/torch_classification_pair.py)，資料來自同一個 [生成函式](../examples/paired_data.py)。架構都是 `2 → 16 → 2`，loss 都吃 logits，optimizer 都是 AdamW，切分相同；初始權重、批次順序與底層運算不同，分數無須逐位相同。
+**讀法**：先決定資料切分、標籤、loss 和指標，再看實作語法。這裡比較的是 **TensorFlow 後端的 `tf.keras`** 與原生 PyTorch；Keras 3 也能使用其他後端，但不是這組範例的設定。兩個框架能表達相同的模型概念，卻沒有「函式名稱一換就完全等價」的保證。先跑同一份離線資料：[TensorFlow 範例](../examples/tf_classification.py)／[PyTorch 範例](../examples/torch_classification_pair.py)，資料來自同一個 [生成函式](../examples/paired_data.py)。架構都是 `2 → 16 → 2`，loss 都吃 logits，optimizer 都是 AdamW，切分相同；初始權重、批次順序與底層運算不同，分數無須逐位相同。
 
 ## 1. 速查：八個步驟
 
